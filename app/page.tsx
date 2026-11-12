@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ArrowDown, ArrowRight, ArrowUpRight, Check, ChevronDown, Clock3, Instagram, MapPin, Menu, Phone, Star, X } from 'lucide-react'
+import { ArrowDown, ArrowRight, ArrowUpRight, Check, ChevronDown, Clock3, Camera, MapPin, Menu, Phone, Star, X } from 'lucide-react'
 
 const categories = ['Все услуги', 'Волосы', 'Ногти', 'Брови'] as const
 type Category = (typeof categories)[number]
@@ -72,7 +72,7 @@ export default function Page() {
 
       <section id="contacts" className="contacts-section section-wrap"><div className="contacts-heading"><div><span className="eyebrow">МЫ РЯДОМ</span><h2>До встречи</h2></div><a href="tel:+78612000000" className="contacts-call"><Phone size={17}/><span>+7 (861) 200-00-00</span><ArrowUpRight size={16}/></a></div><div className="contacts-grid"><div className="map-frame"><iframe title="Карта центра Краснодара" src="https://maps.google.com/maps?q=Krasnodar%20Russia&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/><span className="map-label"><MapPin size={15}/> КРАСНОДАР · ЦЕНТР</span></div><div className="contact-details"><div><span>АДРЕС</span><p>г. Краснодар, ул. Красная, 176<br/><small>Вход со стороны тихого двора · концепт-адрес</small></p></div><div><span>ЧАСЫ РАБОТЫ</span><p>Ежедневно<br/>10:00 — 21:00</p></div><div><span>МЫ НА СВЯЗИ</span><p><a href="tel:+78612000000">+7 (861) 200-00-00</a><br/><a href="https://wa.me/78612000000" target="_blank" rel="noreferrer">WhatsApp ↗</a></p></div><a className="button contact-book" href="#booking">Записаться на визит <ArrowUpRight size={16}/></a><span className="social-caption">БУДЕМ РАДЫ ВАШЕМУ ВИЗИТУ</span></div></div></section>
 
-      <footer className="site-footer"><div className="footer-top"><a href="#top" className="brand footer-brand"><span>ПРЕСТИЖ</span><small>салон красоты</small></a><p>Место, где можно<br/>вернуться к себе.</p><a href="https://instagram.com/" target="_blank" rel="noreferrer" className="instagram-link" aria-label="Instagram"><Instagram size={18}/></a></div><div className="footer-bottom"><span>© 2025 «ПРЕСТИЖ» · ДИЗАЙН-КОНЦЕПТ</span><a id="privacy" href="#privacy">Политика конфиденциальности</a><a href="#top">НАВЕРХ ↑</a></div><div className="footer-watermark">ПРЕСТИЖ</div></footer>
+      <footer className="site-footer"><div className="footer-top"><a href="#top" className="brand footer-brand"><span>ПРЕСТИЖ</span><small>салон красоты</small></a><p>Место, где можно<br/>вернуться к себе.</p><a href="https://instagram.com/" target="_blank" rel="noreferrer" className="instagram-link" aria-label="Instagram"><Camera size={18}/></a></div><div className="footer-bottom"><span>© 2025 «ПРЕСТИЖ» · ДИЗАЙН-КОНЦЕПТ</span><a id="privacy" href="#privacy">Политика конфиденциальности</a><a href="#top">НАВЕРХ ↑</a></div><div className="footer-watermark">ПРЕСТИЖ</div></footer>
     </main>
   )
 }
